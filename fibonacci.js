@@ -20,9 +20,13 @@ function * fibonacciGenerator(limit){
 }
 
 const ourFibs = fibonacciGenerator(10);
-
+let count = 0;
 for(const myFib of ourFibs){
-    console.log(myFib);
+    count++;
+    if(count === 5 ){
+        console.log(`The 5th fibonacci number in our sequence is: ${myFib}`)
+    }
+    // console.log(myFib);
 }
 
 // function* fibonacciGenerator(limit){
@@ -37,8 +41,8 @@ for(const myFib of ourFibs){
 //     }
 // }
 
-let one=fibonacciGenerator(10);
+// let one=fibonacciGenerator(10);
 
-for(let i of one){
-    console.log(i)
-}
+// for(let i of one){
+//     console.log(i)
+// }
